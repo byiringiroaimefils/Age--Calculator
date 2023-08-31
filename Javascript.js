@@ -11,5 +11,9 @@ button.addEventListener("click", function () {
     const day = newdate.getDay();
     const month = newdate.getMonth() - 1;
     day >=0 ?ResultEelement.innerText = `You have  ${year} Year ${month} Month  ${0}Day `:ResultEelement.innerText = `You have  ${year} Year ${month} Month  ${day}Day `
+   
+  setTimeout(()=>{
+    input.value = "";
+  },950)
 
 })
